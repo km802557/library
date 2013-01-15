@@ -1,0 +1,18 @@
+<% provide(:title, @author.nickname) %>
+<div class="row">
+	<aside class="span4">
+		<section>
+			<%= gravatar_for @author %>
+			<%= @author.nickname %>
+		</section>
+	</aside>
+	<div class="span8">
+		<% if @author.publications.any? %>
+			<h3>Publications (<%= @author.publications.count %>)</h3>
+			<ol class="publications">
+				<%= render @publications %>
+			</ol>
+			<%= will_paginate @publications %>
+		<% end %>
+	</div>
+</div>

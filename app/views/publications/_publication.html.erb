@@ -1,0 +1,11 @@
+<li>
+  <span class="title"><%= publication.title %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(publication.created_at) %> ago.
+  </span>
+  <% if current_author?(publication.author) %>
+    <%= link_to "delete", publication, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: publication.title %>
+  <% end %>
+</li>

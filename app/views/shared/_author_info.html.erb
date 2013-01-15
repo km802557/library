@@ -1,0 +1,12 @@
+<a href="<%= author_path(current_author) %>">
+  <%= gravatar_for current_author%>
+</a>
+<h1>
+  <%= current_author.nickname %>
+</h1>
+<span>
+  <%= link_to "view my profile", current_author %>
+</span>
+<span>
+<%= pluralize(current_author.publications.count, "publication") %>
+</span>
