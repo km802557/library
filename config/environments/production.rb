@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Library::Application.configure do
+=======
+ExampleApp::Application.configure do
+>>>>>>> origin/master
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -28,7 +32,11 @@ Library::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+<<<<<<< HEAD
    config.force_ssl = true
+=======
+  # config.force_ssl = true
+>>>>>>> origin/master
 
   # See everything in the log (default is :info)
   # config.log_level = :debug

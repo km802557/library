@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Library::Application.routes.draw do
   resources :authors 
 
@@ -15,6 +16,9 @@ Library::Application.routes.draw do
   root to: "static_pages#home"
 
 
+=======
+ExampleApp::Application.routes.draw do
+>>>>>>> origin/master
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
